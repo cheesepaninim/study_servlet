@@ -35,7 +35,7 @@ public class FrontControllerServletV2 extends HttpServlet {
             return;
         }
 
-        MyView view = controller.process(req, res);// new MyView(viewPath);
+        MyView view = controller.process(req, res); // new MyView(viewPath);
         view.render(req, res);
     }
 }
